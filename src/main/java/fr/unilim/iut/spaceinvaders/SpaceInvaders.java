@@ -68,11 +68,4 @@ public class SpaceInvaders {
     private boolean vaisseauPasSurLeBordGaucheDeLEspaceDeJeu() {
         return vaisseau.abscisse() > 0;
     }
-
-    @Override
-    public String toString() {
-        return recupererEspaceJeuDansChaineASCII();
-    }
-
-
 }
