@@ -40,12 +40,12 @@ Aucune
 
 ### Diagramme de classes 
 
-![Diagrammes de classes de la semaine 1]
+![Diagrammes de classes de la semaine 1] (images/DiagrammeClasses_Semaine1.png)
 
 ### Nuage de mots du projet spaceinvaders (séance n°1)  
 (généré à l’aide de Source Code Word Cloud Generator avec la liste JavaBlacklist.txt fournie en annexe)
  
-![Nuage de mots de la semaine 1]
+![Nuage de mots de la semaine 1] (images/NuageMots_Semaine1.png)
 
 
 ### Difficultés rencontrées 
@@ -61,11 +61,23 @@ Aucune
 
 ### Sprints et fonctionnalités réalisées 
 
+- Story n°1 :  Positionner un nouveau vaisseau avec une dimension donnée   
+
+-  Story n°2 : Faire en sorte qu'il soit impossible de positionner un nouveau vaisseau qui déborde de l'espace de jeu 
+
+- Story n°3 : Déplacer un vaisseau vers la droite en tenant compte de sa dimension 
+
+- Story n°4 : Déplacer un vaisseau vers la gauche en tenant compte de sa dimension 
+
 ### Fonctionnalité en cours d’implémentation : 
 
 ### Diagramme de classes
 
+![Diagrammes de classes de la semaine 2] (images/DiagrammeClasses_Semaine2.png)
+
 ### Nuage de mots du projet spaceinvaders (séance n°2) 
+
+![Nuage de mots de la semaine 2] (images/NuageMots_Semaine2.png)
 
 ### Difficultés rencontrées 
 
