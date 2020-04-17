@@ -62,13 +62,23 @@ Aucune
 ### Sprints et fonctionnalités réalisées 
 
 - Story n°1 :  Positionner un nouveau vaisseau avec une dimension donnée   
-Un nouveau vaisseau vaisseau avec une dimension est créé et positionné 
+Un nouveau vaisseau avec une dimension donnée est créé à une position donnée.
 
 -  Story n°2 : Faire en sorte qu'il soit impossible de positionner un nouveau vaisseau qui déborde de l'espace de jeu 
+Un nouveau vaisseau est créé
+Si un nouveau vaisseau essaye d’être positionné en dehors des limites de l’espace jeu, alors une exception devra être levée.
+ Contraintes :
+La position souhaitée est transmise par ses coordonnées x et y.
+Le coin supérieur gauche de l’espace jeu (point en haut à gauche) a pour coordonnées (0,0)
+La taille du vaisseau est déterminée par une hauteur et une longueur 
 
-- Story n°3 : Déplacer un vaisseau vers la droite en tenant compte de sa dimension 
+- Story n°3 : Déplacer un vaisseau vers la droite en tenant compte de sa dimension
+Le vaisseau se déplace d'un pas vers la droite 
+Si le vaisseau se trouve sur la bordure droite de l'espace de jeu, le vaisseau doit rester immobile (aucun déplacement, aucune exception levée : le vaisseau reste juste à sa position actuelle).
 
 - Story n°4 : Déplacer un vaisseau vers la gauche en tenant compte de sa dimension 
+Le vaisseau se déplace d'un pas vers la gauche 
+Si le vaisseau se trouve sur la bordure gauche de l'espace de jeu, le vaisseau doit rester immobile (aucun déplacement, aucune exception levée : le vaisseau reste juste à sa position actuelle).
 
 ### Fonctionnalité en cours d’implémentation : 
 
