@@ -1,8 +1,8 @@
 # SpaceInvaders
 
 ## Sommaire
-- [Semaine n°1 : du xx au xx avril](#semaine1)  
-- [Semaine n°2 : du xx au xx avril](#semaine2)  
+- [Semaine n°1 : du 30 au 05 avril](#semaine1)  
+- [Semaine n°2 : du 06 au 13 avril](#semaine2)  
 - [Glossaire](#glossaire)
 
 ## Semaine n°1 : du 30 au 05 avril <a id="semaine1"></a>
@@ -62,6 +62,7 @@ Aucune
 ### Sprints et fonctionnalités réalisées 
 
 - Story n°1 :  Positionner un nouveau vaisseau avec une dimension donnée   
+Un nouveau vaisseau vaisseau avec une dimension est créé et positionné 
 
 -  Story n°2 : Faire en sorte qu'il soit impossible de positionner un nouveau vaisseau qui déborde de l'espace de jeu 
 
