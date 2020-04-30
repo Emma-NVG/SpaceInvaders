@@ -2,7 +2,8 @@
 
 ## Sommaire
 - [Semaine n°1 : du 30 au 05 avril](#semaine1)  
-- [Semaine n°2 : du 06 au 13 avril](#semaine2)  
+- [Semaine n°2 : du 06 au 12 avril](#semaine2)  
+- [Semaine n°3 : du 13 au 19 avril](#semaine3)  
 - [Glossaire](#glossaire)
 
 ## Semaine n°1 : du 30 au 05 avril <a id="semaine1"></a>
@@ -56,7 +57,7 @@ Aucune
 
 -------------
 
-## Semaine n°2 : du 06 au 13 avril <a id="semaine2"></a>
+## Semaine n°2 : du 06 au 12 avril <a id="semaine2"></a>
 
 
 ### Sprints et fonctionnalités réalisées 
@@ -91,6 +92,39 @@ Aucune
 ### Nuage de mots du projet spaceinvaders (séance n°2) 
 
 ![Nuage de mots de la semaine 2](images/NuageDeMots_Semaine2.png)
+
+### Difficultés rencontrées   
+
+Aucune.  
+
+### Remarques diverses
+
+Aucune
+
+-------------
+## Semaine n°3 : du 13 au 19 avril <a id="semaine3"></a>
+
+
+### Sprints et fonctionnalités réalisées 
+
+- Story n°1 :  Faire en sorte que le déplacement se fasse correctement pour une vitesse quelconque.   
+Le vaisseau se déplace d'un pas vers la droite ou vers la gauche à une vitesse choisi au préalable    
+
+- Story n°2 : Intégration d'un moteur graphique  
+Lors du lancement du jeu une fenêtre d'une dimension choisie s'ouvre contenant un vaisseau placé à une certaine position choisie au préalable.  
+Le vaisseau peut se déplacer à gauche et à droite dans la fenêtre.
+
+### Fonctionnalité en cours d’implémentation : 
+
+Aucune    
+
+### Diagramme de classes
+
+![Diagrammes de classes de la semaine 3](images/DiagrammeClasses_Semaine3.png)
+
+### Nuage de mots du projet spaceinvaders (séance n°3) 
+
+![Nuage de mots de la semaine 3](images/NuageDeMots_Semaine3.png)
 
 ### Difficultés rencontrées   
 
