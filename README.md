@@ -60,7 +60,9 @@ Aucune
 ## Semaine n°2 : du 06 au 12 avril <a id="semaine2"></a>
 
 
-### Sprints et fonctionnalités réalisées 
+### Sprints et fonctionnalités réalisées
+ 
+#### Fonctionnalité n°2 : Dimensionner le vaisseau (fini)  
 
 - Story n°1 :  Positionner un nouveau vaisseau avec une dimension donnée   
 Un nouveau vaisseau avec une dimension donnée est créé à une position donnée.
@@ -106,6 +108,7 @@ Aucune
 
 
 ### Sprints et fonctionnalités réalisées 
+#### Fonctionnalité n°3 : Choisir la vitesse du vaisseau (fini)  
 
 - Story n°1 :  Faire en sorte que le déplacement se fasse correctement pour une vitesse quelconque.   
 Le vaisseau se déplace d'un pas vers la droite ou vers la gauche à une vitesse choisi au préalable    
@@ -125,6 +128,44 @@ Aucune
 ### Nuage de mots du projet spaceinvaders (séance n°3) 
 
 ![Nuage de mots de la semaine 3](images/NuageDeMots_Semaine3.PNG)
+
+### Difficultés rencontrées   
+
+Aucune.  
+
+### Remarques diverses
+
+Aucune
+
+-------------
+
+## Semaine n°4 : du 04 au 10 avril <a id="semaine4"></a>
+
+
+### Sprints et fonctionnalités réalisées 
+
+#### Fonctionnalité n°4 : Tirer un missile (fini)  
+
+- Story n°1 : Tirer un Missile  
+Quand l'utilisateur appuie sur la barre espace un missile est créé et dessiné sur l'interface.  
+Contraintes : il n'y a pas déjà un missile dans l'espace de jeu.  
+
+- Story n°2 : Déplacement automatique Missile  
+Quand l'utilisateur appuie sur la barre espace un missile est créé et dessiné sur l'interface.  
+Il se déplace automatiquement vers le haut de l'écran.  
+Le missile disparait quand une partie du missile sort de l'espace de jeu.  
+
+### Fonctionnalité en cours d’implémentation : 
+
+Fonctionnalité n°5   
+
+### Diagramme de classes
+
+![Diagrammes de classes de la semaine 4](images/DiagrammeClasses_Semaine4.png)
+
+### Nuage de mots du projet spaceinvaders (séance n°4) 
+
+![Nuage de mots de la semaine 4](images/NuageDeMots_Semaine4.PNG)
 
 ### Difficultés rencontrées   
 
