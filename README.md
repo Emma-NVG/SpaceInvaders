@@ -142,5 +142,6 @@ Aucune
 
 * **Envahisseur**  :  ennemi qui apparaît à l'écran, se déplace automatiquement et qui doit être détruit par un missile lancé depuis le vaisseau du joueur.
 
-
 * **Missile** :  projectile envoyé à la verticale par le vaisseau vers l'envahisseur dans le but de le détruire.
+
+* **Sprite** : élément graphique qui peut se déplacer sur l'écran.  
