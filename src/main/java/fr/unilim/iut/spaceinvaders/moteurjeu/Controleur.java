@@ -30,39 +30,46 @@ public class Controleur implements KeyListener {
 				break;
 			case KeyEvent.VK_RIGHT:
 				this.commandeEnCours.droite = true;
-				this.commandeARetourner.droite = true;
-				break;
-			case KeyEvent.VK_UP:
-				this.commandeEnCours.haut = true;
-				this.commandeARetourner.haut = true;
-				break;
-			case KeyEvent.VK_DOWN:
-				this.commandeEnCours.bas = true;
-				this.commandeARetourner.bas = true;
-				break;
-			default:
-				break;
-		}
+                this.commandeARetourner.droite = true;
+                break;
+            case KeyEvent.VK_UP:
+                this.commandeEnCours.haut = true;
+                this.commandeARetourner.haut = true;
+                break;
+            case KeyEvent.VK_DOWN:
+                this.commandeEnCours.bas = true;
+                this.commandeARetourner.bas = true;
+                break;
+            case KeyEvent.VK_SPACE:
+                this.commandeEnCours.tir = true;
+                this.commandeARetourner.tir = true;
+                break;
+            default:
+                break;
+        }
 	}
 
 	@Override
 	public void keyReleased(KeyEvent e) {
 		switch (e.getKeyCode()) {
 			case KeyEvent.VK_LEFT:
-				this.commandeEnCours.gauche = false;
-				break;
-			case KeyEvent.VK_RIGHT:
-				this.commandeEnCours.droite = false;
-				break;
-			case KeyEvent.VK_UP:
-				this.commandeEnCours.haut = false;
-				break;
-			case KeyEvent.VK_DOWN:
-				this.commandeEnCours.bas = false;
-				break;
-			default:
-				break;
-		}
+                this.commandeEnCours.gauche = false;
+                break;
+            case KeyEvent.VK_RIGHT:
+                this.commandeEnCours.droite = false;
+                break;
+            case KeyEvent.VK_UP:
+                this.commandeEnCours.haut = false;
+                break;
+            case KeyEvent.VK_DOWN:
+                this.commandeEnCours.bas = false;
+                break;
+            case KeyEvent.VK_SPACE:
+                this.commandeEnCours.tir = false;
+                break;
+            default:
+                break;
+        }
 	}
 
 	@Override

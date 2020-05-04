@@ -1,25 +1,18 @@
-package fr.unilim.iut.spaceinvaders;
+package fr.unilim.iut.spaceinvaders.jeu;
 
-public class Vaisseau {
-    private Position origine;
-    private Dimension dimension;
-    private int vitesse;
+public abstract class Sprite {
+    protected Position origine;
+    protected Dimension dimension;
+    protected int vitesse;
 
-    public Vaisseau(int longueur, int hauteur) {
-        this(longueur, hauteur, 0, 0);
+    public Sprite(){
+
     }
 
-    public Vaisseau(int longueur, int hauteur, int x, int y) {
-        this(new Dimension(longueur, hauteur), new Position(x, y));
-    }
-
-    public Vaisseau(Dimension dimension, Position positionOrigine) {
-        this(dimension, positionOrigine, 1);
-    }
-
-    public Vaisseau(Dimension dimension, Position positionOrigine, int vitesse) {
-        this.dimension = dimension;
+    public Sprite(Position positionOrigine, Dimension dimension, int vitesse) {
+        super();
         this.origine = positionOrigine;
+        this.dimension = dimension;
         this.vitesse = vitesse;
     }
 
@@ -51,12 +44,12 @@ public class Vaisseau {
         return this.origine.abscisse();
     }
 
-    public void seDeplacerVersLaDroite() {
-        this.origine.changerAbscisse(this.origine.abscisse() + vitesse);
+    public void deplacerHorizontalementVers(Direction direction) {
+        this.origine.changerAbscisse(this.origine.abscisse() + direction.valeur() * vitesse);
     }
 
-    public void seDeplacerVersLaGauche() {
-        this.origine.changerAbscisse(this.origine.abscisse() - vitesse);
+    public void deplacerVerticalementVers(Direction direction) {
+        this.origine.changerOrdonnee(this.origine.ordonnee() + direction.valeur() * vitesse);
     }
 
     public void positionner(int x, int y) {
@@ -71,4 +64,5 @@ public class Vaisseau {
     public int longueur() {
         return this.dimension.longueur();
     }
+
 }
