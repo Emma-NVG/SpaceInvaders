@@ -1,4 +1,4 @@
-package fr.unilim.iut.spaceinvaders;
+package fr.unilim.iut.spaceinvaders.jeu;
 
 public abstract class Sprite {
     protected Position origine;
