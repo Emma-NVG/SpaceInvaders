@@ -6,8 +6,6 @@ import fr.unilim.iut.spaceinvaders.utils.DebordementEspaceJeuException;
 import fr.unilim.iut.spaceinvaders.utils.HorsEspaceJeuException;
 import fr.unilim.iut.spaceinvaders.utils.MissileException;
 
-import static fr.unilim.iut.spaceinvaders.jeu.Constante.*;
-
 public class SpaceInvaders implements Jeu {
     int longueur;
     int hauteur;
@@ -68,7 +66,7 @@ public class SpaceInvaders implements Jeu {
 
     public void deplacerVaisseauVersLaDroite() {
         if (vaisseauPasSurLeBordDroitDeLEspaceDeJeu()) {
-            vaisseau.seDeplacerVersLaDroite();
+            vaisseau.deplacerHorizontalementVers(Direction.DROITE);
             if (!estDansEspaceJeu(vaisseau.abscisseLaPlusADroite(), vaisseau.ordonneLaPlusHaute())) {
                 vaisseau.positionner(longueur - vaisseau.longueur(), vaisseau.ordonneLaPlusHaute());
             }
@@ -77,7 +75,7 @@ public class SpaceInvaders implements Jeu {
 
     public void deplacerVaisseauVersLaGauche() {
         if (vaisseauPasSurLeBordGaucheDeLEspaceDeJeu())
-            vaisseau.seDeplacerVersLaGauche();
+            vaisseau.deplacerHorizontalementVers(Direction.GAUCHE);
         if (!estDansEspaceJeu(vaisseau.abscisseLaPlusAGauche(), vaisseau.ordonneLaPlusHaute())) {
             vaisseau.positionner(0, vaisseau.ordonneLaPlusHaute());
         }
@@ -125,6 +123,9 @@ public class SpaceInvaders implements Jeu {
         if (commande.tir && !this.aUnMissile()) {
             tirerUnMissile(new Dimension(Constante.MISSILE_LONGUEUR, Constante.MISSILE_HAUTEUR), Constante.MISSILE_VITESSE);
         }
+        if (this.aUnMissile()) {
+            deplacerMissile();
+        }
     }
 
     @Override
@@ -141,5 +142,12 @@ public class SpaceInvaders implements Jeu {
 
     public Missile recupererMissile() {
         return this.missile;
+    }
+
+    public void deplacerMissile() {
+        if (missile.ordonneLaPlusBasse() <= 0)
+            missile = null;
+        else
+            missile.deplacerVerticalementVers(Direction.HAUT_ECRAN);
     }
 }

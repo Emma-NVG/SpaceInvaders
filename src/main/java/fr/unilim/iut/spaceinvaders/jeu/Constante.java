@@ -16,5 +16,5 @@ public class Constante {
 
     public static final int MISSILE_LONGUEUR = 10;
     public static final int MISSILE_HAUTEUR = 6;
-    public static final int MISSILE_VITESSE = 7;
+    public static final int MISSILE_VITESSE = 2;
 }
