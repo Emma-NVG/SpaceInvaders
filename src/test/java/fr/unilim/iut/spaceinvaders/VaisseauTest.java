@@ -1,9 +1,9 @@
 package fr.unilim.iut.spaceinvaders;
 
-import fr.unilim.iut.spaceinvaders.jeu.Dimension;
-import fr.unilim.iut.spaceinvaders.jeu.Position;
-import fr.unilim.iut.spaceinvaders.jeu.SpaceInvaders;
-import fr.unilim.iut.spaceinvaders.jeu.Vaisseau;
+import fr.unilim.iut.spaceinvaders.model.Dimension;
+import fr.unilim.iut.spaceinvaders.model.Position;
+import fr.unilim.iut.spaceinvaders.model.SpaceInvaders;
+import fr.unilim.iut.spaceinvaders.model.Vaisseau;
 import fr.unilim.iut.spaceinvaders.utils.MissileException;
 import org.junit.Before;
 import org.junit.Test;

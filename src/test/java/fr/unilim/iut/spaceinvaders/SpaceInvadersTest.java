@@ -1,9 +1,8 @@
 package fr.unilim.iut.spaceinvaders;
 
-import fr.unilim.iut.spaceinvaders.jeu.Dimension;
-import fr.unilim.iut.spaceinvaders.jeu.Position;
-import fr.unilim.iut.spaceinvaders.jeu.SpaceInvaders;
-import fr.unilim.iut.spaceinvaders.jeu.Vaisseau;
+import fr.unilim.iut.spaceinvaders.model.Dimension;
+import fr.unilim.iut.spaceinvaders.model.Position;
+import fr.unilim.iut.spaceinvaders.model.SpaceInvaders;
 import fr.unilim.iut.spaceinvaders.utils.DebordementEspaceJeuException;
 import fr.unilim.iut.spaceinvaders.utils.HorsEspaceJeuException;
 import fr.unilim.iut.spaceinvaders.utils.MissileException;
@@ -295,5 +294,82 @@ public class SpaceInvadersTest {
                 ".....VVVVVVV...\n", spaceinvaders.recupererEspaceJeuDansChaineASCII());
     }
 
+    //Envahisseur
 
+    @Test
+    public void test_unNouvelEnvahisseurEstCorrectementPositionneDansEspaceJeu() {
+        spaceinvaders.positionnerUnNouvelEnvahisseur(new Dimension(1, 1), new Position(7, 2), 1);
+        assertEquals("" +
+                "...............\n" +
+                "...............\n" +
+                ".......E.......\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n", spaceinvaders.recupererEspaceJeuDansChaineASCII());
+    }
+
+    @Test
+    public void test_UnNouvelEnvahisseurPositionneHorsEspaceJeu_DoitLeverUneException() {
+        try {
+            spaceinvaders.positionnerUnNouvelEnvahisseur(new Dimension(1, 1), new Position(15, 9), 1);
+            fail("Position trop à droite : devrait déclencher une exception HorsEspaceJeuException");
+        } catch (final HorsEspaceJeuException e) {
+        }
+
+        try {
+            spaceinvaders.positionnerUnNouvelEnvahisseur(new Dimension(1, 1), new Position(-1, 9), 1);
+            fail("Position trop à gauche : devrait déclencher une exception HorsEspaceJeuException");
+        } catch (final HorsEspaceJeuException e) {
+        }
+
+        try {
+            spaceinvaders.positionnerUnNouvelEnvahisseur(new Dimension(1, 1), new Position(14, 10), 1);
+            fail("Position trop en bas : devrait déclencher une exception HorsEspaceJeuException");
+        } catch (final HorsEspaceJeuException e) {
+        }
+
+        try {
+            spaceinvaders.positionnerUnNouvelEnvahisseur(new Dimension(1, 1), new Position(14, -1), 1);
+            fail("Position trop à haut : devrait déclencher une exception HorsEspaceJeuException");
+        } catch (final HorsEspaceJeuException e) {
+        }
+
+    }
+
+    @Test
+    public void test_UnNouvelEnvahisseurAvecDimensionEstCorrectementPositionneDansEspaceJeu() {
+        spaceinvaders.positionnerUnNouvelEnvahisseur(new Dimension(3, 2), new Position(7, 9), 1);
+        assertEquals("" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                "...............\n" +
+                ".......EEE.....\n" +
+                ".......EEE.....\n", spaceinvaders.recupererEspaceJeuDansChaineASCII());
+    }
+
+    @Test
+    public void test_UnNouvelEnvahisseurPositionneDansEspaceJeuMaisAvecDimensionTropGrande_DoitLeverUneExceptionDeDebordement() {
+        try {
+            spaceinvaders.positionnerUnNouvelEnvahisseur(new Dimension(9, 2), new Position(7, 9), 1);
+            fail("Dépassement de l'envahisseur à droite en raison de sa longueur trop importante : devrait déclencher une exception DebordementEspaceJeuException");
+        } catch (final DebordementEspaceJeuException e) {
+        }
+
+
+        try {
+            spaceinvaders.positionnerUnNouvelEnvahisseur(new Dimension(3, 4), new Position(7, 1), 1);
+            fail("Dépassement de l'envahisseur vers le haut en raison de sa hauteur trop importante : devrait déclencher une exception DebordementEspaceJeuException");
+        } catch (final DebordementEspaceJeuException e) {
+        }
+
+    }
 }

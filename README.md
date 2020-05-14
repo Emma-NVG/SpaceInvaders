@@ -4,6 +4,7 @@
 - [Semaine n°1 : du 30 au 05 avril](#semaine1)  
 - [Semaine n°2 : du 06 au 12 avril](#semaine2)  
 - [Semaine n°3 : du 13 au 19 avril](#semaine3)  
+- [Semaine n°4 : du 04 au 10 mai](#semaine4)
 - [Glossaire](#glossaire)
 
 ## Semaine n°1 : du 30 au 05 avril <a id="semaine1"></a>
@@ -139,7 +140,7 @@ Aucune
 
 -------------
 
-## Semaine n°4 : du 04 au 10 avril <a id="semaine4"></a>
+## Semaine n°4 : du 04 au 10 mai <a id="semaine4"></a>
 
 
 ### Sprints et fonctionnalités réalisées 
@@ -157,7 +158,7 @@ Le missile disparait quand une partie du missile sort de l'espace de jeu.
 
 ### Fonctionnalité en cours d’implémentation : 
 
-Fonctionnalité n°5   
+Fonctionnalité n°5  : création de l'envahisseur à l'initialisation du jeu.   
 
 ### Diagramme de classes
 
