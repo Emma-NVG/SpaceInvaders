@@ -3,8 +3,9 @@
 ## Sommaire
 - [Semaine n°1 : du 30 au 05 avril](#semaine1)  
 - [Semaine n°2 : du 06 au 12 avril](#semaine2)  
-- [Semaine n°3 : du 13 au 19 avril](#semaine3) 
+- [Semaine n°3 : du 13 au 19 avril](#semaine3)  
 - [Semaine n°4 : du 04 au 10 mai](#semaine4)
+- [Semaine n°5 : du 11 au 17 mai](#semaine5)
 - [Glossaire](#glossaire)
 
 ## Semaine n°1 : du 30 au 05 avril <a id="semaine1"></a>
@@ -158,7 +159,7 @@ Le missile disparait quand une partie du missile sort de l'espace de jeu.
 
 ### Fonctionnalité en cours d’implémentation : 
 
-Fonctionnalité n°5   
+Fonctionnalité n°5  : création de l'envahisseur à l'initialisation du jeu.   
 
 ### Diagramme de classes
 
@@ -175,6 +176,43 @@ Aucune.
 ### Remarques diverses
 
 Aucune
+
+-------------
+
+## Semaine n°5 : du 11 au 17 mai <a id="semaine5"></a>
+
+
+### Sprints et fonctionnalités réalisées 
+
+#### Fonctionnalité n°5 : Ajouter un envahisseur (fini)  
+
+- Story n°1 : Création d'un envahisseur 
+A l'initialisation du jeu un envahisseur est crée et placé dans l'espace de jeu 
+
+- Story n°2 : Déplacement automatique envahisseur 
+L'envahisseur se déplace de gauche à droite jusqu'à atteindre le bord droit de l'espace de jeu.  
+L'envahisseur se déplace ensuite de droite à gauche jusqu'à atteindre le bord gauche de l'espace de jeu.  
+Ces actions sont répétées jusqu'à la fin du jeu.  
+
+### Fonctionnalité en cours d’implémentation : 
+
+  
+
+### Diagramme de classes
+
+![Diagrammes de classes de la semaine 5](images/DiagrammeClasses_Semaine5.png)
+
+### Nuage de mots du projet spaceinvaders (séance n°5) 
+
+![Nuage de mots de la semaine 5](images/NuageDeMots_Semaine5.PNG)
+
+### Difficultés rencontrées   
+
+Aucune.  
+
+### Remarques diverses
+
+Aucune.
 
 -------------
 
