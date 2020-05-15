@@ -6,7 +6,6 @@ public abstract class Sprite {
     protected int vitesse;
 
     public Sprite(){
-
     }
 
     public Sprite(Position positionOrigine, Dimension dimension, int vitesse) {

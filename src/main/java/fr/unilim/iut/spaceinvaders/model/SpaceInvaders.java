@@ -127,6 +127,9 @@ public class SpaceInvaders implements Jeu {
         if (this.aUnMissile()) {
             deplacerMissile();
         }
+        if (this.aUnEnvahisseur()) {
+            deplacerEnvahisseur();
+        }
     }
 
     @Override
