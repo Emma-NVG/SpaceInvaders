@@ -6,6 +6,7 @@
 - [Semaine n°3 : du 13 au 19 avril](#semaine3)  
 - [Semaine n°4 : du 04 au 10 mai](#semaine4)
 - [Semaine n°5 : du 11 au 17 mai](#semaine5)
+- [Semaine n°6 : du 18 au 24 mai](#semaine6)
 - [Glossaire](#glossaire)
 
 ## Semaine n°1 : du 30 au 05 avril <a id="semaine1"></a>
@@ -213,6 +214,35 @@ Aucune.
 ### Remarques diverses
 
 Aucune.
+
+-------------
+
+## Semaine n°6 : du 18 au 24 mai <a id="semaine6"></a>
+
+
+### Sprints et fonctionnalités réalisées  
+
+#### Fonctionnalité n°6 : Détecter une collision  
+
+-Story n°1 : Collision entre deux sprites  
+Quand un sprite entre en collision avec un autre (intersection des deux rectangles) la méthode retourne true.  
+
+
+### Diagramme de classes
+
+![Diagrammes de classes de la semaine 6](images/DiagrammeClasses_Semaine6.png)
+
+### Nuage de mots du projet spaceinvaders (séance n°6) 
+
+![Nuage de mots de la semaine 6](images/NuageDeMots_Semaine6.png)
+
+### Difficultés rencontrées   
+
+Aucune.
+
+### Remarques diverses
+
+Les tests doivent ils être différents pour les collisions vaisseau-envahisseur et envahisseur-missile ?
 
 -------------
 
