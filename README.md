@@ -246,6 +246,26 @@ Les tests doivent ils être différents pour les collisions vaisseau-envahisseur
 
 -------------
 
+## Suite du projet, initiative personnelle : 13 octobre <a id="suite"></a>
+
+
+### Sprints et fonctionnalités réalisées  
+
+#### Fonctionnalité n°6 : Détecter une collision
+
+-Story n°1 : Détection de collision entre deux sprites    
+Création des classes collision et collisionTest. 
+
+-Story n°2 : Action après collision et implémantation graphique   
+Lorsqu'une collision survient entre un envahisseur et un missile ceux-ci disparaissent. 
+
+#### Fonctionnalité n°7 : Terminer la partie
+
+-Story n°1 : Arrêt de la partie
+Si il n'y a plus d'envahisseurs le jeu s'arrête. Modification de la fonction evoluer(). 
+
+-------------
+
 ## Glossaire <a id="glossaire"></a>
 
 * **Vaisseau** :  véhicule commandé par le joueur, pouvant se déplacer de droite à gauche et ayant la possibilité de lancer des missiles destinés à détruire le(s) envahisseurs.
@@ -255,3 +275,5 @@ Les tests doivent ils être différents pour les collisions vaisseau-envahisseur
 * **Missile** :  projectile envoyé à la verticale par le vaisseau vers l'envahisseur dans le but de le détruire.
 
 * **Sprite** : élément graphique qui peut se déplacer sur l'écran.  
+
+* **Collision** : Une collision survient quand deux sprites se trouvent à la même position.  
