@@ -15,15 +15,22 @@ public class DessinSpaceInvaders implements DessinJeu {
 
     @Override
     public void dessiner(BufferedImage im) {
-        if (this.jeu.aUnVaisseau()) {
-            Vaisseau vaisseau = this.jeu.recupererVaisseau();
-            Missile missile = this.jeu.recupererMissile();
-            Envahisseur envahisseur = this.jeu.recupererEnvahisseur();
-            this.dessinerUnVaisseau(vaisseau, im);
-            this.dessinerUnEnvahisseur(envahisseur, im);
+        if (!this.jeu.partieFinie()) {
+            if (this.jeu.aUnVaisseau()) {
+                Vaisseau vaisseau = this.jeu.recupererVaisseau();
+                this.dessinerUnVaisseau(vaisseau, im);
+            }
+            if (this.jeu.aUnEnvahisseur()) {
+                Envahisseur envahisseur = this.jeu.recupererEnvahisseur();
+                this.dessinerUnEnvahisseur(envahisseur, im);
+            }
             if (this.jeu.aUnMissile()) {
+                Missile missile = this.jeu.recupererMissile();
                 this.dessinerUnMissile(missile, im);
             }
+        }
+        if (this.jeu.partieFinie()) {
+            this.dessinerMessageFin(im);
         }
     }
 
@@ -48,6 +55,13 @@ public class DessinSpaceInvaders implements DessinJeu {
         crayon.setColor(Color.blue);
         crayon.fillRect(missile.abscisseLaPlusAGauche(), missile.ordonneLaPlusBasse(), missile.longueur(), missile.hauteur());
 
+    }
+
+    private void dessinerMessageFin(BufferedImage im) {
+        Graphics2D crayon = (Graphics2D) im.getGraphics();
+
+        crayon.setColor(Color.black);
+        crayon.fillRect(5, 5, 10, 5);
     }
 
 }

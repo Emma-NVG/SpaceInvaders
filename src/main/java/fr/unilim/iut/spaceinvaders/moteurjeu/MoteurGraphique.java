@@ -16,15 +16,15 @@ public class MoteurGraphique {
 	public void lancerJeu(int width, int height) throws InterruptedException {
 
 
-		this.gui = new InterfaceGraphique(this.dessin, width, height);
-		Controleur controle = this.gui.getControleur();
+        this.gui = new InterfaceGraphique(this.dessin, width, height);
+        Controleur controle = this.gui.getControleur();
 
-		while (!this.jeu.etreFini()) {
-			Commande c = controle.getCommande();
-			this.jeu.evoluer(c);
-			this.gui.dessiner();
-			Thread.sleep(100);
-		}
-	}
+        while (!this.jeu.partieFinie()) {
+            Commande c = controle.getCommande();
+            this.jeu.evoluer(c);
+            this.gui.dessiner();
+            Thread.sleep(100);
+        }
+    }
 
 }

@@ -1,5 +1,6 @@
 package fr.unilim.iut.spaceinvaders;
 
+import fr.unilim.iut.spaceinvaders.model.Constante;
 import fr.unilim.iut.spaceinvaders.model.Dimension;
 import fr.unilim.iut.spaceinvaders.model.Position;
 import fr.unilim.iut.spaceinvaders.model.SpaceInvaders;
@@ -19,6 +20,16 @@ public class SpaceInvadersTest {
     @Before
     public void initialisation() {
         spaceinvaders = new SpaceInvaders(15, 10);
+    }
+
+    @Test
+    public void test_initialiserJeu() {
+        spaceinvaders = new SpaceInvaders(150, 100);
+        spaceinvaders.initialiserJeu();
+        assertEquals(false, spaceinvaders.partieFinie());
+        assertEquals(true, spaceinvaders.aUnEnvahisseur());
+        assertEquals(true, spaceinvaders.aUnVaisseau());
+
     }
 
     @Test
@@ -169,23 +180,6 @@ public class SpaceInvadersTest {
                 "VVV............\n" +
                 "VVV............\n", spaceinvaders.recupererEspaceJeuDansChaineASCII());
     }
-
-//    public void test_VaisseauAvance_DeplacerVaisseauVersLaDroite() {
-//
-//        spaceinvaders.positionnerUnNouveauVaisseau(new Dimension(3, 2), new Position(7, 9), 3);
-//        spaceinvaders.deplacerVaisseauVersLaDroite();
-//        assertEquals("" +
-//                "...............\n" +
-//                "...............\n" +
-//                "...............\n" +
-//                "...............\n" +
-//                "...............\n" +
-//                "...............\n" +
-//                "...............\n" +
-//                "...............\n" +
-//                "..........VVV..\n" +
-//                "..........VVV..\n", spaceinvaders.recupererEspaceJeuDansChaineASCII());
-//    }
 
     @Test
     public void test_VaisseauAvancePartiellement_DeplacerVaisseauVersLaDroite() {
