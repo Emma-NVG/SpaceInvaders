@@ -7,6 +7,7 @@
 - [Semaine n°4 : du 04 au 10 mai](#semaine4)
 - [Semaine n°5 : du 11 au 17 mai](#semaine5)
 - [Semaine n°6 : du 18 au 24 mai](#semaine6)
+- [Suite du projet, initiative personnelle : 13 octobre](#suite)
 - [Glossaire](#glossaire)
 
 ## Semaine n°1 : du 30 au 05 avril <a id="semaine1"></a>
