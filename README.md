@@ -1,5 +1,7 @@
 # SpaceInvaders
 
+Space Invaders réalisé en TDD dans le cadre de mon DUT info
+
 ## Sommaire
 - [Semaine n°1 : du 30 au 05 avril](#semaine1)  
 - [Semaine n°2 : du 06 au 12 avril](#semaine2)  
